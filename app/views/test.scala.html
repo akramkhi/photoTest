@@ -1,0 +1,16 @@
+@( url: String , rslt : List[String])
+
+@main("Scala test") {
+    <h1>Welcome to the seconde part of test!</h1>
+
+
+    <img src="@url" >
+    @if(!rslt.isEmpty()){
+        <h1>Welcome to the Third part of test!</h1>
+        <ul>
+        @for(list <- rslt) {
+            <img src="@list" >
+        }
+        </ul>
+    }
+}
